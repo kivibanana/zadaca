@@ -106,7 +106,7 @@ def left(coord):
         write_element(coord)
 
     elif NUM_ELEMENTS == 1:
-        MATRIX[coord[0]][coord[1]] = [NUM_ELEMENTS, "left"]
+        MATRIX[coord[0]][coord[1]] = [NUM_ELEMENTS, ""]
         NUM_ELEMENTS -= 1
 
     else:
@@ -132,7 +132,7 @@ def right(coord):
         write_element(coord)
 
     elif NUM_ELEMENTS == 1:
-        MATRIX[coord[0]][coord[1]] = [NUM_ELEMENTS, "right"]
+        MATRIX[coord[0]][coord[1]] = [NUM_ELEMENTS, ""]
         NUM_ELEMENTS -= 1
 
     else:
@@ -158,7 +158,7 @@ def up(coord):
         write_element(coord)
 
     elif NUM_ELEMENTS == 1:
-        MATRIX[coord[0]][coord[1]] = [NUM_ELEMENTS, "up"]
+        MATRIX[coord[0]][coord[1]] = [NUM_ELEMENTS, ""]
         NUM_ELEMENTS -= 1
 
     else:
@@ -184,7 +184,7 @@ def down(coord):
         write_element(coord)
 
     elif NUM_ELEMENTS == 1:
-        MATRIX[coord[0]][coord[1]] = [NUM_ELEMENTS, "down"]
+        MATRIX[coord[0]][coord[1]] = [NUM_ELEMENTS, ""]
         NUM_ELEMENTS -= 1
 
     else:
