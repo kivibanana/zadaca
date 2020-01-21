@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 num_rows = int(input("Number of rows: "))
-num_columns = int(input("number of columns: "))
+num_columns = int(input("Number of columns: "))
 
 if num_rows == 0 or num_columns == 0:
 
