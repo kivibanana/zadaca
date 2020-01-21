@@ -9,6 +9,7 @@ START_POINT = input(
 ROT_DIR = input("Set rotation direction (clockwise, counterclockwise) [cw/cc]: ")
 
 MATRIX = []
+
 NUM_ELEMENTS = NUM_ROWS * NUM_COLUMNS
 
 for i in range(NUM_ROWS):
@@ -24,6 +25,7 @@ START_POINTS = {
 COORD_START_POINT = START_POINTS[START_POINT]
 
 ROUTE_CW = ("right", "down", "left", "up")
+
 ROUTE_CC = ("down", "right", "up", "left")
 
 
