@@ -5,9 +5,10 @@
 ?>
 <!DOCTYPE html>
 <html lang="en">
-<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Ciklična matrica</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -28,14 +29,12 @@
             <div>
             <input type="radio" name="start_point" id="start-point-ul" value="ul" checked>
             <label for="start-point-ul">Gore lijevo</label>
-            </div>
-            <div>
             <input type="radio" name="start_point" id="start-point-ur" value="ur">
             <label for="start-point-ur">Gore desno</label>
             </div>
+            <div>
             <input type="radio" name="start_point" id="start-point-bl" value="bl">
             <label for="start-point-bl">Dole lijevo</label>
-            <div>
             <input type="radio" name="start_point" id="start-point-br" value="br">
             <label for="start-point-br">Dole desno</label>
             </div>
@@ -49,7 +48,7 @@
             <input type="radio" name="rot_dir" id="rot-dir-cc" value="cc">
             <label for="rot-dir-cc">U smjeru suprotnom od smjera kretanja kazaljke na satu</label>
             </div>
-            <p><input type="submit" value="Izradi matricu"></input></p>
+            <p><input type="submit" value="Izradi matricu" id="button"></input></p>
         </form>
     </div>
     <div id="rezultat">
@@ -253,7 +252,7 @@
             $ROUTE = start_directions($START_POINT, $ROT_DIR)[1];
             write_element($COORD_START_POINT);
 
-            echo '<table border="1">';
+            echo '<table>';
             for($i=0, $cti = count($MATRIX); $i < $cti; $i++){
                 echo '<tr>';
                 for($j=0, $ctj = count($MATRIX[$i]); $j < $ctj; $j++){
