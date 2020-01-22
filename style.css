@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12pt;
+    padding-left: 20px;
+}
+
+table {
+    border-collapse: collapse;
+    font-size: 14pt;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+table tbody tr td {
+    border-left: 1pt solid black;
+    border-right: 1pt solid black;
+    border-top: 1pt solid black;
+    border-bottom: 1pt solid black;
+    padding: 4px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+table tbody tr td.left {
+    border-left: 2pt dashed #e2e2e2;
+}
+
+table tbody tr td.right{
+    border-right: 2pt dashed #e2e2e2;
+}
+
+table tbody tr td.up{
+    border-top: 2pt dashed #e2e2e2;
+}
+
+table tbody tr td.down{
+    border-bottom: 2pt dashed #e2e2e2;
+}
+
+#button {
+    height: 50px;
+    width: 450px;
+}
