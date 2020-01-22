@@ -2,7 +2,7 @@
 
 ## PHP
 
-[Poveznica na PHP - Ciklična matrica rješena bez funkcija TRENUTNO NE RADI - POGLEDATI PYTHON RJEŠENJE](https://polaznik41.edunova.hr/matrica/)
+Poveznica na PHP - Ciklična matrica rješena bez funkcija - [POGLEDATI PYTHON RJEŠENJE](https://github.com/kivibanana/zadaca/blob/master/circular_flow_matrix_without_funcs.py)
 
 [Poveznica na PHP - Ciklična matrica rješena rekurzivnim funkcijama](https://polaznik41.edunova.hr/matrica_func/)
 
