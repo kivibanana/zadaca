@@ -2,7 +2,9 @@
 
 ## PHP
 
-[Poveznica na PHP - Ciklična matrica rješena rekurzivnim funkcijama](https://polaznik41.edunova.hr/matrica/)
+[Poveznica na PHP - Ciklična matrica rješena bez funkcija](https://polaznik41.edunova.hr/matrica/)
+
+[Poveznica na PHP - Ciklična matrica rješena rekurzivnim funkcijama](https://polaznik41.edunova.hr/matrica_func/)
 
 ## Python
 
