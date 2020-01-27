@@ -38,6 +38,7 @@
             $numColumns = (is_numeric($_POST['num_columns']) ? (int)$_POST['num_columns'] : 1);
             
             $numElements = $numRows * $numColumns;
+            $numSubtractor = $numElements + 1;
 
             $rowIdx = $numRows - 1;
             $columnIdx = $numColumns - 1;
@@ -57,9 +58,9 @@
             if ($numColumns === 1){
                 for($i = 0; $i < $numRows; $i++){
                     if($numElements === 1){
-                        $matrix[$rowIdx][$columnIdx] = [$numElements, ''];
+                        $matrix[$rowIdx][$columnIdx] = [$numSubtractor - $numElements, ''];
                     }else{
-                        $matrix[$rowIdx][$columnIdx] = [$numElements, 'up'];
+                        $matrix[$rowIdx][$columnIdx] = [$numSubtractor - $numElements, 'up'];
                     }
                     $numElements -= 1;
                     $rowIdx -= 1;
@@ -67,9 +68,9 @@
             }else if($numRows === 1){
                 for($i = 0; $i < $columnCounter; $i++){
                     if($numElements === 1){
-                        $matrix[$rowIdx][$columnIdx] = [$numElements, ''];
+                        $matrix[$rowIdx][$columnIdx] = [$numSubtractor - $numElements, ''];
                     }else{
-                        $matrix[$rowIdx][$columnIdx] = [$numElements, 'left'];
+                        $matrix[$rowIdx][$columnIdx] = [$numSubtractor - $numElements, 'left'];
                     }
                     $numElements -= 1;
                     $columnIdx -= 1;
@@ -78,11 +79,11 @@
                 while($numElements > 0){
                     for($i = 0; $i < $columnCounter; $i++){
                         if($numElements == 1){
-                            $matrix[$rowIdx][$columnIdx] = [$numElements, ''];
+                            $matrix[$rowIdx][$columnIdx] = [$numSubtractor - $numElements, ''];
                         }else if($i < ($columnCounter - 1)){
-                            $matrix[$rowIdx][$columnIdx] = [$numElements, 'left'];
+                            $matrix[$rowIdx][$columnIdx] = [$numSubtractor - $numElements, 'left'];
                         }else{
-                            $matrix[$rowIdx][$columnIdx] = [$numElements, 'up'];
+                            $matrix[$rowIdx][$columnIdx] = [$numSubtractor - $numElements, 'up'];
                         }
                         $numElements -= 1;
                         $columnIdx -= 1;
@@ -99,11 +100,11 @@
 
                     for($i = 0; $i < $rowCounter; $i++){
                         if($numElements == 1){
-                            $matrix[$rowIdx][$columnIdx] = [$numElements, ''];
+                            $matrix[$rowIdx][$columnIdx] = [$numSubtractor - $numElements, ''];
                         }else if($i < ($rowCounter - 1)){
-                            $matrix[$rowIdx][$columnIdx] = [$numElements, 'up'];
+                            $matrix[$rowIdx][$columnIdx] = [$numSubtractor - $numElements, 'up'];
                         }else{
-                            $matrix[$rowIdx][$columnIdx] = [$numElements, 'right'];
+                            $matrix[$rowIdx][$columnIdx] = [$numSubtractor - $numElements, 'right'];
                         }
                         $numElements -= 1;
                         $rowIdx -= 1;
@@ -120,11 +121,11 @@
 
                     for($i = 0; $i < $columnCounter; $i++){
                         if($numElements == 1){
-                            $matrix[$rowIdx][$columnIdx] = [$numElements, ""];
+                            $matrix[$rowIdx][$columnIdx] = [$numSubtractor - $numElements, ""];
                         }else if($i < ($columnCounter - 1)){
-                            $matrix[$rowIdx][$columnIdx] = [$numElements, 'right'];
+                            $matrix[$rowIdx][$columnIdx] = [$numSubtractor - $numElements, 'right'];
                         }else{
-                            $matrix[$rowIdx][$columnIdx] = [$numElements, 'down'];
+                            $matrix[$rowIdx][$columnIdx] = [$numSubtractor - $numElements, 'down'];
                         }
                         $numElements -= 1;
                         $columnIdx += 1;
@@ -141,11 +142,11 @@
 
                     for($i = 0; $i < $rowCounter; $i++){
                         if($numElements == 1){
-                            $matrix[$rowIdx][$columnIdx] = [$numElements, ""];
+                            $matrix[$rowIdx][$columnIdx] = [$numSubtractor - $numElements, ""];
                         }else if($i < ($rowCounter - 1)){
-                            $matrix[$rowIdx][$columnIdx] = [$numElements, 'down'];
+                            $matrix[$rowIdx][$columnIdx] = [$numSubtractor - $numElements, 'down'];
                         }else{
-                            $matrix[$rowIdx][$columnIdx] = [$numElements, 'left'];
+                            $matrix[$rowIdx][$columnIdx] = [$numSubtractor - $numElements, 'left'];
                         }
                         $numElements -= 1;
                         $rowIdx += 1;
